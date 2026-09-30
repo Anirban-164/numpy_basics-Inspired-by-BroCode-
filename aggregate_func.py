@@ -21,7 +21,10 @@ print(np.argmax(array)) # index of max element (flattened)
 # Use unravel_index to get the index in 2D format
 min_idx = np.unravel_index(np.argmin(array), array.shape) # stores tuple of indices
 max_idx = np.unravel_index(np.argmax(array), array.shape)
-print(tuple(map(int, min_idx))) # convert to standard integer tuple
+print(min_idx)
+print(max_idx)
+# convert to standard integer tuple
+print(tuple(map(int, min_idx)))
 print(tuple(map(int, max_idx)))
 
 print(np.median(array)) # median of all elements

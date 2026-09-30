@@ -36,3 +36,5 @@ char_array = np.array([[['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']],
                        [['s', 't', 'u'], ['v', 'w', 'x'], ['y', 'z', ' ']]])
 word = char_array[0][2][1] + char_array[0][2][2]
 print(word)
+word2 = char_array[0, 0, 1] + char_array[2, 2, 0] + char_array[0, 1, 1]
+print(word2)

@@ -24,5 +24,5 @@ print(fruits)
 random_fruit = rng.choice(fruits) # Randomly select a fruit from the list
 print(random_fruit)
 
-random_fruits = rng.choice(fruits, size=(2,3)) # Randomly select 6 unique fruits into a 2x3 grid from the list
+random_fruits = rng.choice(fruits, size=(2,3)) # Randomly select 6 fruits into a 2x3 grid from the list (can have duplicates)
 print(random_fruits)
