@@ -27,7 +27,7 @@ plt.show()
 scores = np.random.normal(loc = 80, scale = 10, size = 100) # loc = the mean, scale = standard deviation
 scores = np.clip(scores, 0, 100) # to limit the values between 0 and 100
 
-plt.hist(scores)
+# plt.hist(scores)
 plt.title("Test scores")
 
 plt.hist(scores,

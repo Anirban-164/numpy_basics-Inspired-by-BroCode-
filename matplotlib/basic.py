@@ -65,8 +65,8 @@ plt.title("Yearly Data",
           family = "Arial",
           fontweight = "bold")
 
-plt.xlabel("Year", fontsize = 12, color = "black")
-plt.ylabel("Value", fontsize = 12, color = "black")
+# plt.xlabel("Year", fontsize = 12, color = "black")
+# plt.ylabel("Value", fontsize = 12, color = "black")
 
 plt.xticks(x) #shows year for only given values of x
 y_ticks = sorted(set(np.concatenate((y, y2, y3))))

@@ -3,9 +3,10 @@ import numpy as np
 
 categories = np.array(['Grains', 'Fruits', 'Vegetables', 'Protein', 'Dairy', 'Sweets'])
 values = np.array([4, 3, 2, 5, 3, 7])
+colors = ['#FF9999', '#66B2FF', '#99FF99', '#FFCC99', '#FFD700', '#C0C0C0']
 
 # bar-chart
-plt.bar(categories, values, color = ['#FF9999', '#66B2FF', '#99FF99', '#FFCC99', '#FFD700', '#C0C0C0'])
+plt.bar(categories, values, color = colors)
 # plt.barh(categories, values) # horizontal bar chart
 
 plt.title("Daily Food Consumption")
@@ -16,7 +17,6 @@ plt.show()
 
 
 # pie-chart
-colors = ['#FF9999', '#66B2FF', '#99FF99', '#FFCC99', '#FFD700', '#C0C0C0']
 explodes = (0.1, 0, 0, 0, 0, 0) # to move a slice away from the center of the pie chart
 plt.pie(values,
         labels = categories,
