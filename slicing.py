@@ -35,5 +35,6 @@ print(array[:, ::-2]) # 1st and 3rd columns from the end by going 2 steps backwa
 
 print(array[1:3, 1:3])  # 2nd and 3rd rows and columns
 print(array[0:2, 2:4])
+print(array[:2, 2:]) #same as previous line
 print(array[0:2:-1, 2:4:-1]) # will be empty because we are trying to slice from 0 to 2 by going backwards, which is not possible
 print(array[1::-1, 3:1:-1]) # 1st and 2nd rows and 4th and 3rd columns by going backwards

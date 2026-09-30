@@ -15,8 +15,14 @@ print(np.mean(array, axis=1)) # avg of each row
 
 print(np.min(array)) # min of all elements
 print(np.max(array)) # max of all elements
-print(np.argmin(array)) # index of min element
-print(np.argmax(array)) # index of max element
+print(np.argmin(array)) # index of min element (flattened)
+print(np.argmax(array)) # index of max element (flattened)
+
+# Use unravel_index to get the index in 2D format
+min_idx = np.unravel_index(np.argmin(array), array.shape) # stores tuple of indices
+max_idx = np.unravel_index(np.argmax(array), array.shape)
+print(tuple(map(int, min_idx))) # convert to standard integer tuple
+print(tuple(map(int, max_idx)))
 
 print(np.median(array)) # median of all elements
 print(np.std(array)) # standard deviation

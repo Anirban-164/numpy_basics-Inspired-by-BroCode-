@@ -5,7 +5,7 @@ import numpy as np
 
 -> two arrays are compatible if
     1. their dimensions have same size
-    2. one of their dimensions is 1
+    2. one from each pair of dimensions is 1
 """
 
 array1 = np.array([[1, 2, 3, 4]])

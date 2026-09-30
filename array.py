@@ -2,12 +2,12 @@ import numpy as np
 
 my_list = [1, 2, 3, 4]
 print (my_list)
-my_list = my_list * 2
+my_list = my_list * 2 # print the list twice
 print (my_list)
 
 my_array = np.array([1, 2, 3, 4])
 print (my_array)
-my_array = my_array * 2
+my_array = my_array * 2 # multiply each element by 2
 print (my_array)
 
 
